@@ -32,3 +32,13 @@ body {
 	margin: auto;
 	width: 300px;
 }
+
+.counter-caption {
+	color: white;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	text-transform: uppercase;
+}
