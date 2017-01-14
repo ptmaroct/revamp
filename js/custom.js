@@ -1,6 +1,8 @@
 $(function(){
 	//For navbar on mobile devices
 	$(".button-collapse").sideNav();
+	$(window).load(function() {
+	$(".progress").fadeOut("slow");
 
 	//For Countdown
 	var startDate = new Date();
@@ -13,4 +15,7 @@ $(function(){
 	interval: 1000,       // Counter uopdate interval
 	speed: 500         
 	}); 
+
+	
+})
 });
