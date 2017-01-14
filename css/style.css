@@ -46,6 +46,10 @@ body.cool{
 
 .progress {
 	margin: 0;
+	background-color: #fff;
+}
+.indeterminate {
+	background-color: #0081ff !important;
 }
 /*Position of logo*/
 .logo {
