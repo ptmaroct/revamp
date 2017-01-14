@@ -1,6 +1,7 @@
 /*Background color of navbar, use #4caf50 for a green color, #0089ec for blue*/
-.nav-wrapper{
-	background-color: #2196f3; 
+nav {
+	/*Lol its transparent now anyway*/
+	background: transparent;
 }
 
 /*Font size of navbar links*/
@@ -14,8 +15,11 @@ nav ul li.active {
     background-color: #00bcd4;
 
 }
-
-body{
+body {
+	background-color: #0081ff;
+}
+/*This is an awesome gradient animation for background*/
+body.cool{
 	background: linear-gradient(189deg, #ffab00, #0081ff, #d71a1a, #3abd67);
 	background-size: 800% 800%;
 
@@ -67,4 +71,20 @@ body{
 h2{
 	color: white;
 	text-transform: uppercase;
+}
+
+.emodal{
+	padding: 0 !important; 
+}
+
+.tabs {
+	overflow-x: hidden;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #2196F3;
+}
+
+.tabs .tab a{
+	font-size: 20px;
 }
