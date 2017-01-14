@@ -85,7 +85,8 @@ h2{
     color: #2196F3;
 }
 
-@media only screen and (max-width: 992px)
-.modal {
-    width: 95%;
+@media only screen and (max-width: 992px){
+	.modal {
+	    width: 95%;
+	}
 }
