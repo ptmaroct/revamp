@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+			<link rel="stylesheet" href="flipclock.css">
+
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+</head>
+<body>
+<div class="clock"></div>
+
+
+<script src="flipclock.min.js"></script>
+
+<script class="source" type="text/javascript">
+var startDate = new Date();
+// Do your operations
+var endDate   = new Date('February 17, 2017');
+var seconds = (endDate.getTime() - startDate.getTime()) / 1000;
+
+var clock = $('.clock').FlipClock(seconds, {
+		clockFace: 'DailyCounter',
+		countdown: true
+	});
+</script>
+</body>
+</html>

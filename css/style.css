@@ -1,4 +1,34 @@
+/*Background color of navbar, use #4caf50 for a green color, #0089ec for blue*/
 .nav-wrapper{
-	/*Background color of navbar, use #4caf50 for a green color*/
-	background-color: #0089ec; 
+	background-color: #1d1f21; 
+}
+
+/*Font size of navbar links*/
+nav ul a {
+	font-size: 17px;
+}
+
+/*Color of active page link*/
+nav ul li.active {
+    background-color: #0089ec;
+}
+
+/*Background color of page*/
+body {
+	background-color: #000;
+}
+/*Position of logo*/
+.logo {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: url('../images/logo.png') 50% 50% no-repeat;
+}
+
+.revamp-logo {
+	margin: auto;
+	width: 300px;
 }
