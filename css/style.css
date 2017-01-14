@@ -84,3 +84,8 @@ h2{
 .tabs .tab a:hover, .tabs .tab a.active {
     color: #2196F3;
 }
+
+@media only screen and (max-width: 992px)
+.modal {
+    width: 95%;
+}
