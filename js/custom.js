@@ -9,6 +9,14 @@ $(function(){
 	expiryDate: new Date('February 17, 2017'),
 	interval: 1000,       // Counter uopdate interval
 	speed: 500         
-	}); 	
+	}); 
+
+	$('.card').hover(
+	    function() {
+	        $(this).find('> .card-image > img.activator').click();
+	    }, function() {
+	        $(this).find('> .card-reveal > .card-title').click();
+	    }
+	);	
 })
 });
