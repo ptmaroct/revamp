@@ -223,3 +223,7 @@ video#bgvid {
 		animation: AnimationName 32s ease infinite;
 	}
 }
+
+footer.page-footer .footer-copyright{
+	background-color: rgba(51, 51, 51, 0.68);
+}

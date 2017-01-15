@@ -49,17 +49,39 @@
 		</video>
 
 		<div class="container">
-			<div class="row">
-				<div class="valign-wrapper">
-					<img src="images/logo.png" alt="Revamp Logo" class="responsive-img revamp-logo zoomIn rotateIn">
+			<div class="row valign-wrapper">
+			<div class="col m3 hide-on-small-only">
+				<a class="waves-effect waves-light btn-large" href="events.html">Events</a>
+			</div>
+			<div class="col m6">	
+				<!-- <img src="images/logo.png" alt="Revamp Logo" class="responsive-img revamp-logo zoomIn rotateIn"> -->
+				<ul id="scene" class="revamp-logo">
+				  <li class="layer" data-depth="0.00"><img src="images/4.png" class="responsive-img"></li>
+				  <li class="layer" data-depth="0.20"><img src="images/10.png" class="responsive-img"></li>
+				  <li class="layer" data-depth="0.60"><img src="images/17.png" class="responsive-img"></li>
+				  <li class="layer" data-depth="1.00"><img src="images/18.png" class="responsive-img"></li>
+				</ul>
+			</div>
+			<div class="col m3 hide-on-small-only">
+				<a class="waves-effect waves-light btn-large" href="register.html">Register</a>
+			</div>
+			</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col s6 hide-on-med-and-up">
+						<a class="waves-effect waves-light btn-large" href="events.html">Events</a>
+					</div>
+					<div class="col s6 hide-on-med-and-up">
+						<a class="waves-effect waves-light btn-large" href="register.html">Register</a>
+					</div>
 				</div>
 			</div>
-		</div>
 
 		<div class="container">
 
 			<center>	
-				<h2>Starting in</h2>
+				
 				<div id="myCounter"></div>
 			</center>
 		</div>
@@ -70,8 +92,13 @@
 		<footer class="page-footer footer">
 		    <div class="footer-copyright">
 		      <div class="container">
-		      <div class="row flow-text" style="text-align: center;">
-		      	 Made by <a class="brown-text text-lighten-3" href="http://anujsh.com" target="_blank">Anuj Sharma</a>
+		      <div class="row flow-text">
+		      	<div class="left-align" style="display: inline-block;">Like us on
+				<a href="https://facebook.com/revamp" target="_blank">Facebook</a>
+				</div>
+		      	 <div style="display: inline-block; float: right;">
+				Made By<a href="http://anujsh.com" target="_blank"> Anuj Sharma</a>
+		      	 </div>
 		      	</div>
 		      </div>
 		    </div>
@@ -81,6 +108,12 @@
 			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.min.js"></script>
 			<script type="text/javascript" src="js/custom.js"></script>
+			<script type="text/javascript" src="js/parallax.js"></script>
+			<script>
+				var scene = document.getElementById('scene');
+				var parallax = new Parallax(scene);
+			</script>
 			<script src="js/clock.js"></script>
+
 		</body>
 	</html>
