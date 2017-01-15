@@ -18,15 +18,7 @@ nav ul li.active {
 body {
 	background-color: #0081ff;
 }
-/*This is an awesome gradient animation for background*/
-body.cool{
-	background: linear-gradient(189deg, #ffab00, #0081ff, #d71a1a, #3abd67);
-	background-size: 800% 800%;
 
-	-webkit-animation: AnimationName 32s ease infinite;
-	-moz-animation: AnimationName 32s ease infinite;
-	animation: AnimationName 32s ease infinite;
-}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 57%}
@@ -176,4 +168,16 @@ video#bgvid {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   animation: zoomIn 3s;
+}
+
+@media(max-width: 600px){
+	/*This is an awesome gradient animation for background*/
+	body.cool{
+		background: linear-gradient(189deg, #ffab00, #0081ff, #d71a1a, #3abd67);
+		background-size: 800% 800%;
+
+		-webkit-animation: AnimationName 32s ease infinite;
+		-moz-animation: AnimationName 32s ease infinite;
+		animation: AnimationName 32s ease infinite;
+	}
 }
