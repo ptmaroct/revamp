@@ -121,6 +121,10 @@ h2,h1{
 	text-transform: uppercase;
 }
 
+.collapsible-body{
+	background-color:white;
+	
+}
 .emodal{
 	padding: 0 !important; 
 }
