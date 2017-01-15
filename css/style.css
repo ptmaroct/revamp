@@ -64,6 +64,48 @@ body {
 	100% {filter: blur(0px);}
 }
 
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateIn:hover {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  animation: rotateIn 2s;
+}
+
 .revamp-logo {
 	margin: auto;
 	width: 300px;
