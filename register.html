@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!--Import Google Icon Font-->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!-- Import Roboto Font -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+			<!--Import materialize.css-->
+			<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+			<!-- Custom Stylesheet -->
+			<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+			<!--Let browser know website is optimized for mobile-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Register | Revamp 2K17</title>
+			<style>
+				.tabs .tab a, .tabs .tab a:hover {
+				    color: #000000;
+				}
+				.tabs .tab a{
+					font-size: 20px;
+				}
+				.tabs .tab a.active{
+					border: solid 2px black;
+				}
+			</style>
+		</head>
+
+		<body>
+		<!-- Loading -->
+		<div class="progress">
+		    <div class="indeterminate"></div>
+		</div>
+		<!-- Navbar -->
+		<nav>
+		  <div class="nav-wrapper">
+		    <a href="index.html" class="brand-logo"><img src="images/header.png" alt="Revamp Logo" class="responsive-img rlogo"></a>
+		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		    <ul class="right hide-on-med-and-down">
+		    	<li><a href="index.html">Home</a></li>
+		    	<li><a href="events.html">Events</a></li>
+		    	<li><a href="reg.html">Register</a></li>
+		    	<li  class="active"><a href="#">Rules	</a></li>
+		    	<li><a href="team.html">Team</a></li>
+				<li><a href="contact.html">Contact</a></li>
+		    </ul>
+		    <ul class="side-nav" id="mobile-demo">
+		    	<li><a href="index.html">Home</a></li>
+		    	<li><a href="events.html">Events</a></li>
+		    	<li><a href="reg.html">Register</a></li>
+		    	<li class="active"><a href="#">Rules	</a></li>
+		    	<li><a href="team.html">Team</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+		  </div>
+		</nav>
+		
+		<!-- Main Content Starts Here -->
+		<div class="container">
+			<div class="row">
+				<h1 class="center-align">Register</h1>
+			</div>
+		</div>
+
+		<div class="container white" style="padding: 20px;">
+		<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate" required>
+          <label for="name">Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+               <option value="" disabled selected required>Choose your year</option>
+               <option value="1">First</option>
+               <option value="2">Second</option>
+               <option value="3">Third</option>
+               <option value="4">Fourth</option>
+           </select>
+          <label>Year</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+               <option value="" disabled selected required>Choose your branch</option>
+               <option value="1">CSE</option>
+               <option value="2">ME</option>
+               <option value="3">Civil</option>
+               <option value="4">EN</option>
+               <option value="5">IT</option>
+               <option value="6">EC</option>
+           </select>
+          <label for="branch">Branch</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="roll" type="number" class="validate" required>
+          <label for="roll">Roll Number</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" required>
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="phone" type="number" class="validate" required>
+          <label for="phone">Mobile Number</label>
+        </div>
+      </div>
+      
+		<h3 class="center-align">Select Events</h3>
+	
+	
+	<div class="row">
+	    <div class="col s12">
+	      <ul class="tabs">
+	        <li class="tab col s6"><a class="active waves waves-effect" href="#solo">Solo Events</a></li>
+	        <li class="tab col s6"><a class=" waves waves-effect" href="#group">Group Events</a></li>
+	      </ul>
+	    </div>
+
+	    <div id="solo" class="col s12">
+	    	
+	    		<!-- Solo Events -->
+	    	      <div class="row">
+	    	         <div class="col s12">
+	    	           <ul class="tabs">
+	    	             <li class="tab col s6"><a class="active" href="#cultural">Cultural</a></li>
+	    	             <li class="tab col s6"><a href="#technical">Technical</a></li>
+	    	           </ul>
+	    	         </div>
+	    	        <div id="cultural" class="col s12">
+	    	         	<p>
+	    	     	      <input type="checkbox" id="raag"/>
+	    	     	      <label for="raag">Raag - Singing Competition</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="mirage"/>
+	    	     	      <label for="mirage">Mirage - Fashion Show</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="hasya"/>
+	    	     	      <label for="hasya">Hasya Kavi</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="natraj"/>
+	    	     	      <label for="natraj">Natraj - Solo Dance</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="games"/>
+	    	     	      <label for="games">Games</label>
+	    	         	</p>
+	    	        </div>
+
+	    	        <div id="technical" class="col s12">
+	    	         	<p>
+	    	     	      <input type="checkbox" id="natraj"/>
+	    	     	      <label for="natraj">Natraj - Solo Dance</label>
+	    	         	</p>
+	    	        </div>
+	    	 
+	    	       </div>
+	    </div>
+	    <div id="group" class="col s12">
+	    		<!-- Group Events -->
+	    	      <div class="row">
+	    	         <div class="col s12">
+	    	           <ul class="tabs">
+	    	             <li class="tab col s6"><a class="active" href="#culturalg">Cultural</a></li>
+	    	             <li class="tab col s6"><a href="#technicalg">Technical</a></li>
+	    	           </ul>
+	    	         </div>
+	    	        <div id="culturalg" class="col s12">
+	    	         	<p>
+	    	     	      <input type="checkbox" id="banjo"/>
+	    	     	      <label for="banjo">Banjo - The Clash of Bands</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="sargam"/>
+	    	     	      <label for="sargam">Sargam - Group Singing</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="nritya"/>
+	    	     	      <label for="nritya">Nritya - Group Dance</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="manch"/>
+	    	     	      <label for="manch">Manch Tantra - Skit ompetition</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="gudgudi"/>
+	    	     	      <label for="gudgudi">Gudgudi - A comic act</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="tamaasha"/>
+	    	     	      <label for="tamaasha">Tamaasha - Nukkad Natak</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="filmy"/>
+	    	     	      <label for="filmy">Filmy Mukabala - Cine Quiz</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="saregamapa"/>
+	    	     	      <label for="saregamapa">Sa Re Ga Ma Pa - Antakshri</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="drishyam"/>
+	    	     	      <label for="drishyam">Drishyam - Mobile Movie Making</label>
+	    	         	</p>
+	    	         	<p>
+	    	     	      <input type="checkbox" id="admad"/>
+	    	     	      <label for="admad">Ad Mad - Advertisement</label>
+	    	         	</p>
+
+
+	    	        </div>
+
+	    	        <div id="technicalg" class="col s12">
+	    	         	<p>
+	    	     	      <input type="checkbox" id="natraj"/>
+	    	     	      <label for="natraj">Natraj - Solo Dance</label>
+	    	         	</p>
+	    	        </div>
+	    	 
+	    	       </div>
+
+
+	    </div>
+	  </div>
+
+
+      
+    
+  	</div>
+  </div>
+
+		     
+	
+		<footer class="page-footer footer">
+		    <div class="footer-copyright">
+		      <div class="container">
+		      <div class="row flow-text">
+		      	<div class="left-align" style="display: inline-block;">Like us on
+				<a href="https://facebook.com/revamp2k17" target="_blank">Facebook</a>
+				</div>
+		      	 <div style="display: inline-block; float: right;">
+				Made By<a href="http://anujsh.com" target="_blank"> Anuj Sharma</a>
+		      	 </div>
+		      	</div>
+		      </div>
+		    </div>
+		  </footer>
+
+	
+		<!-- Content Ends Here -->
+
+			<!--Import jQuery before materialize.js-->
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="js/materialize.min.js"></script>
+			<script type="text/javascript" src="js/custom.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+				   $('select').material_select();
+				 });
+			</script>
+		</body>
+	</html>
