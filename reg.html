@@ -80,23 +80,21 @@
       <div class="row">
         <div class="input-field col s6">
           <select id="branch">
-               <option value="" disabled selected required>Choose your branch</option>
-               <option value="1">CSE</option>
-               <option value="2">ME</option>
-               <option value="3">Civil</option>
-               <option value="4">EN</option>
-               <option value="5">IT</option>
-               <option value="6">EC</option>
+               <option>CSE</option>
+               <option>ME</option>
+               <option>Civil</option>
+               <option>EN</option>
+               <option>IT</option>
+               <option>EC</option>
            </select>
           <label for="branch">Branch</label>
         </div>
         <div class="input-field col s6">
           <select id="year">
-               <option value="" disabled selected required>Choose your year</option>
-               <option value="1">First</option>
-               <option value="2">Second</option>
-               <option value="3">Third</option>
-               <option value="4">Fourth</option>
+               <option>First</option>
+               <option>Second</option>
+               <option>Third</option>
+               <option>Fourth</option>
            </select>
           <label>Year</label>
         </div>
@@ -126,7 +124,7 @@
       <div class="row" id="events">
       <!-- Solo Events -->
       <div id="culturalevents" style="display: none;">
-		<div class="col s12 m6">
+		<div class="col s12 m6" id="culturalsolo">
 		<h3>SOLO</h3>
 	    	<p>
 		      <input type="checkbox" id="raag"/>
@@ -150,15 +148,15 @@
 	    	</p>
 		</div>
 		<!-- Group Events for cultural -->
-		<div class="col m6 s12">
+		<div class="col m6 s12" id="culturalgroup">
 		<h3>Group</h3>
 	    	<p>
 		      <input type="checkbox" id="banjo"/>
 		      <label for="banjo">Banjo - The Clash of Bands</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="banjoform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="banjotext" class="materialize-textarea"></textarea>
+	          <label for="banjotext">Enter Names of team members</label>
 	    	</div>
 
 	    	<p>
@@ -166,72 +164,72 @@
 		      <label for="sargam">Sargam - Group Singing</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="sargamform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="sargamtext" class="materialize-textarea"></textarea>
+	          <label for="sargamtext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="nritya"/>
 		      <label for="nritya">Nritya - Group Dance</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="nrityaform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="nrityatext" class="materialize-textarea"></textarea>
+	          <label for="nrityatext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="manch"/>
 		      <label for="manch">Manch Tantra - Skit ompetition</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="manchform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="manchtext" class="materialize-textarea"></textarea>
+	          <label for="manchtext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="gudgudi"/>
 		      <label for="gudgudi">Gudgudi - A comic act</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="gudgudiform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="gudguditext" class="materialize-textarea"></textarea>
+	          <label for="gudguditext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="tamaasha"/>
 		      <label for="tamaasha">Tamaasha - Nukkad Natak</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="tamaashaform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="tamaashatext" class="materialize-textarea"></textarea>
+	          <label for="tamaashatext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="filmy"/>
 		      <label for="filmy">Filmy Mukabala - Cine Quiz</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="filmyform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="filmytext" class="materialize-textarea"></textarea>
+	          <label for="filmytext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="saregamapa"/>
 		      <label for="saregamapa">Sa Re Ga Ma Pa - Antakshri</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="saregamapaform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="saregamapatext" class="materialize-textarea"></textarea>
+	          <label for="saregamapatext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="drishyam"/>
 		      <label for="drishyam">Drishyam - Mobile Movie Making</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="drishyamform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="drishyamtext" class="materialize-textarea"></textarea>
+	          <label for="drishyamtext">Enter Names of team members</label>
 	    	</div>
 	    	<p>
 		      <input type="checkbox" id="admad"/>
 		      <label for="admad">Ad Mad - Advertisement</label>
 	    	</p>
 	    	<div class="input-field col s12 " id="admadform">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Enter Names of team members</label>
+	          <textarea id="admadtext" class="materialize-textarea"></textarea>
+	          <label for="admadtext">Enter Names of team members</label>
 	    	</div>
 		</div>
 		</div>
@@ -246,8 +244,8 @@
       		      <label for="rag">Rags To Rich </label>
       	 	</p>
       	 	<p>
-      		      <input type="checkbox" id="biding"/>
-      		      <label for="biding">Biding C Quiz</label>
+      		      <input type="checkbox" id="bidding"/>
+      		      <label for="bidding">Bidding C Quiz</label>
       	 	</p>
       	 	<p>
       		      <input type="checkbox" id="LAN"/>
@@ -290,6 +288,9 @@
       		      <label for="idea">Idea Presentation</label>
       	 	</p>
       	</div>
+		<center>	
+      	<button type="submit" class="btn-large teal submit">Register</button>
+      	</center>
 
       </div>
 	
@@ -322,33 +323,10 @@
 		<!-- Content Ends Here -->
 
 			<!--Import jQuery before materialize.js-->
-			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
 			<script type="text/javascript" src="js/materialize.min.js"></script>
 			<script type="text/javascript" src="js/custom.js"></script>
-			<script type="text/javascript">
-				$(document).ready(function() {
-				   $('select').material_select();
+			<script type="text/javascript" src="js/reg.js"></script>
 
-				   var cultural = $('#culturalevents');
-				   var technical = $('#technicalevents');
-
-				   $(document).on('change','#eventtype',function(){
-				                   var option = $(this).find("option:selected").attr('value');
-				                   if(option=='cultural'){
-				                   	cultural.toggle();
-				                   	technical.css("display","none");
-				                   }else{
-				                   	cultural.css("display","none")
-				                   	technical.toggle();
-				                   }
-				             });
-
-				   $("div[id$='form']").css("display","none"); //hides all textarea unless ticked by upper tickbox
-
-				   
-
-				 });
-
-			</script>
 		</body>
 	</html>
