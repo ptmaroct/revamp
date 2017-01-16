@@ -23,6 +23,7 @@
 				.tabs .tab a.active{
 					border: solid 2px black;
 				}
+
 			</style>
 		</head>
 
@@ -66,26 +67,19 @@
 		<div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="name" type="text" class="validate" required>
           <label for="name">Name</label>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <select>
-               <option value="" disabled selected required>Choose your year</option>
-               <option value="1">First</option>
-               <option value="2">Second</option>
-               <option value="3">Third</option>
-               <option value="4">Fourth</option>
-           </select>
-          <label>Year</label>
+        <div class="input-field col s6">
+          <input id="roll" type="number" class="validate" required>
+          <label for="roll">Roll Number</label>
         </div>
       </div>
+      
       <div class="row">
-        <div class="input-field col s12">
-          <select>
+        <div class="input-field col s6">
+          <select id="branch">
                <option value="" disabled selected required>Choose your branch</option>
                <option value="1">CSE</option>
                <option value="2">ME</option>
@@ -96,149 +90,210 @@
            </select>
           <label for="branch">Branch</label>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="roll" type="number" class="validate" required>
-          <label for="roll">Roll Number</label>
+        <div class="input-field col s6">
+          <select id="year">
+               <option value="" disabled selected required>Choose your year</option>
+               <option value="1">First</option>
+               <option value="2">Second</option>
+               <option value="3">Third</option>
+               <option value="4">Fourth</option>
+           </select>
+          <label>Year</label>
         </div>
       </div>
+   
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="email" type="email" class="validate" required>
           <label for="email">Email</label>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="phone" type="number" class="validate" required>
           <label for="phone">Mobile Number</label>
         </div>
       </div>
-      
-		<h3 class="center-align">Select Events</h3>
+     
+      <div class="row">
+		<h3 class="center-align">Select Event Type</h3>
+		<hr>
+			<select id="eventtype">
+			 <option value="" disabled selected>Choose event type</option>
+			   <option value="cultural">Cultural</option>
+			   <option value="technical">Technical</option>
+			 </select>
+      </div>
+
+      <div class="row" id="events">
+      <!-- Solo Events -->
+      <div id="culturalevents" style="display: none;">
+		<div class="col s12 m6">
+		<h3>SOLO</h3>
+	    	<p>
+		      <input type="checkbox" id="raag"/>
+		      <label for="raag">Raag - Singing Competition</label>
+	    	</p>
+	    	<p>
+		      <input type="checkbox" id="mirage"/>
+		      <label for="mirage">Mirage - Fashion Show</label>
+	    	</p>
+	    	<p>
+		      <input type="checkbox" id="hasya"/>
+		      <label for="hasya">Hasya Kavi</label>
+	    	</p>
+	    	<p>
+		      <input type="checkbox" id="natraj"/>
+		      <label for="natraj">Natraj - Solo Dance</label>
+	    	</p>
+	    	<p>
+		      <input type="checkbox" id="games"/>
+		      <label for="games">Games</label>
+	    	</p>
+		</div>
+		<!-- Group Events for cultural -->
+		<div class="col m6 s12">
+		<h3>Group</h3>
+	    	<p>
+		      <input type="checkbox" id="banjo"/>
+		      <label for="banjo">Banjo - The Clash of Bands</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="banjoform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+
+	    	<p>
+		      <input type="checkbox" id="sargam"/>
+		      <label for="sargam">Sargam - Group Singing</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="sargamform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="nritya"/>
+		      <label for="nritya">Nritya - Group Dance</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="nrityaform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="manch"/>
+		      <label for="manch">Manch Tantra - Skit ompetition</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="manchform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="gudgudi"/>
+		      <label for="gudgudi">Gudgudi - A comic act</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="gudgudiform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="tamaasha"/>
+		      <label for="tamaasha">Tamaasha - Nukkad Natak</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="tamaashaform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="filmy"/>
+		      <label for="filmy">Filmy Mukabala - Cine Quiz</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="filmyform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="saregamapa"/>
+		      <label for="saregamapa">Sa Re Ga Ma Pa - Antakshri</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="saregamapaform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="drishyam"/>
+		      <label for="drishyam">Drishyam - Mobile Movie Making</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="drishyamform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+	    	<p>
+		      <input type="checkbox" id="admad"/>
+		      <label for="admad">Ad Mad - Advertisement</label>
+	    	</p>
+	    	<div class="input-field col s12 " id="admadform">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Enter Names of team members</label>
+	    	</div>
+		</div>
+		</div>
+
+      	 <div id="technicalevents" class="col s12" style="display: none;">
+      	 	<p>
+      		      <input type="checkbox" id="quiz"/>
+      		      <label for="quiz">Technical Quiz</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="rag"/>
+      		      <label for="rag">Rags To Rich </label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="biding"/>
+      		      <label for="biding">Biding C Quiz</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="LAN"/>
+      		      <label for="LAN">LAN Games</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="hack"/>
+      		      <label for="hack">Hack Fest</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="robo"/>
+      		      <label for="robo">Robo Race</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="circuit"/>
+      		      <label for="circuit">Circuit Designing</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="code"/>
+      		      <label for="code">Code Debugging</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="web"/>
+      		      <label for="web">Web Developer</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="load"/>
+      		      <label for="load">Bear Your Load</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="auto"/>
+      		      <label for="auto">AUTO Cad</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="build"/>
+      		      <label for="build">Build a bridge</label>
+      	 	</p>
+      	 	<p>
+      		      <input type="checkbox" id="idea"/>
+      		      <label for="idea">Idea Presentation</label>
+      	 	</p>
+      	</div>
+
+      </div>
 	
 	
-	<div class="row">
-	    <div class="col s12">
-	      <ul class="tabs">
-	        <li class="tab col s6"><a class="active waves waves-effect" href="#solo">Solo Events</a></li>
-	        <li class="tab col s6"><a class=" waves waves-effect" href="#group">Group Events</a></li>
-	      </ul>
-	    </div>
-
-	    <div id="solo" class="col s12">
-	    	
-	    		<!-- Solo Events -->
-	    	      <div class="row">
-	    	         <div class="col s12">
-	    	           <ul class="tabs">
-	    	             <li class="tab col s6"><a class="active" href="#cultural">Cultural</a></li>
-	    	             <li class="tab col s6"><a href="#technical">Technical</a></li>
-	    	           </ul>
-	    	         </div>
-	    	        <div id="cultural" class="col s12">
-	    	         	<p>
-	    	     	      <input type="checkbox" id="raag"/>
-	    	     	      <label for="raag">Raag - Singing Competition</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="mirage"/>
-	    	     	      <label for="mirage">Mirage - Fashion Show</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="hasya"/>
-	    	     	      <label for="hasya">Hasya Kavi</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="natraj"/>
-	    	     	      <label for="natraj">Natraj - Solo Dance</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="games"/>
-	    	     	      <label for="games">Games</label>
-	    	         	</p>
-	    	        </div>
-
-	    	        <div id="technical" class="col s12">
-	    	         	<p>
-	    	     	      <input type="checkbox" id="natraj"/>
-	    	     	      <label for="natraj">Natraj - Solo Dance</label>
-	    	         	</p>
-	    	        </div>
-	    	 
-	    	       </div>
-	    </div>
-	    <div id="group" class="col s12">
-	    		<!-- Group Events -->
-	    	      <div class="row">
-	    	         <div class="col s12">
-	    	           <ul class="tabs">
-	    	             <li class="tab col s6"><a class="active" href="#culturalg">Cultural</a></li>
-	    	             <li class="tab col s6"><a href="#technicalg">Technical</a></li>
-	    	           </ul>
-	    	         </div>
-	    	        <div id="culturalg" class="col s12">
-	    	         	<p>
-	    	     	      <input type="checkbox" id="banjo"/>
-	    	     	      <label for="banjo">Banjo - The Clash of Bands</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="sargam"/>
-	    	     	      <label for="sargam">Sargam - Group Singing</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="nritya"/>
-	    	     	      <label for="nritya">Nritya - Group Dance</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="manch"/>
-	    	     	      <label for="manch">Manch Tantra - Skit ompetition</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="gudgudi"/>
-	    	     	      <label for="gudgudi">Gudgudi - A comic act</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="tamaasha"/>
-	    	     	      <label for="tamaasha">Tamaasha - Nukkad Natak</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="filmy"/>
-	    	     	      <label for="filmy">Filmy Mukabala - Cine Quiz</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="saregamapa"/>
-	    	     	      <label for="saregamapa">Sa Re Ga Ma Pa - Antakshri</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="drishyam"/>
-	    	     	      <label for="drishyam">Drishyam - Mobile Movie Making</label>
-	    	         	</p>
-	    	         	<p>
-	    	     	      <input type="checkbox" id="admad"/>
-	    	     	      <label for="admad">Ad Mad - Advertisement</label>
-	    	         	</p>
-
-
-	    	        </div>
-
-	    	        <div id="technicalg" class="col s12">
-	    	         	<p>
-	    	     	      <input type="checkbox" id="natraj"/>
-	    	     	      <label for="natraj">Natraj - Solo Dance</label>
-	    	         	</p>
-	    	        </div>
-	    	 
-	    	       </div>
-
-
-	    </div>
-	  </div>
-
-
-      
-    
   	</div>
   </div>
 
@@ -269,7 +324,27 @@
 			<script type="text/javascript">
 				$(document).ready(function() {
 				   $('select').material_select();
+
+				   var cultural = $('#culturalevents');
+				   var technical = $('#technicalevents');
+
+				   $(document).on('change','#eventtype',function(){
+				                   var option = $(this).find("option:selected").attr('value');
+				                   if(option=='cultural'){
+				                   	cultural.toggle();
+				                   	technical.css("display","none");
+				                   }else{
+				                   	cultural.css("display","none")
+				                   	technical.toggle();
+				                   }
+				             });
+
+				   $("div[id$='form']").css("display","none"); //hides all textarea unless ticked by upper tickbox
+
+				   
+
 				 });
+
 			</script>
 		</body>
 	</html>
