@@ -8,6 +8,7 @@ $(document).ready(function() {
    //form registration by jquery
    $('.submit').click(function(e){
    	e.preventDefault();
+    $(this).addClass("disabled");
    	var name = $('#name').val();
    	var roll = $('#roll').val();
    	var branch = $('#branch').val();
@@ -60,6 +61,9 @@ $(document).ready(function() {
    	$.post('register.php',{name:name, roll:roll, branch:branch, year:year, email:email, phone:phone, eventnames:eventnames, eventnamesg:eventnamesg,teventnames:teventnames}, function(return_data){
 		alert(return_data);
 	});
+
+    window.location.replace("index.html");
+
 
 
    	
