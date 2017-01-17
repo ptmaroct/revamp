@@ -65,21 +65,21 @@
        <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Enter Name:</label>
+          <input id="name" type="text" class="validate" required>
+          <label for="name">Enter Name:</label>
         </div>
-        <div class="row">
+       
         <div class="input-field col s6">
 		  <i class="material-icons prefix">perm identity</i>
-          <input id="rollno" type="text" class="validate">
+          <input id="rollno" type="text" class="validate" required>
           <label for="rollno">Enter Roll No</label>
         </div>
       </div>
 	  <div class="row">
 	   <div class="input-field col s6">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="number" class="validate" pattern="\d{3}\d{3}\d{4}" >
-          <label for="icon_telephone">Phone No</label>
+          <input id="phone" type="number" class="validate" pattern="\d{3}\d{3}\d{4}" required>
+          <label for="phone">Phone No</label>
         </div>
       
 	 
@@ -87,23 +87,26 @@
          <i class="material-icons prefix">turned in</i>
          
             <input id="email" type="email" class="validate">
-            <label for="email" data-error="wrong" data-success="right">Email</label>
+            <label for="email" data-error="wrong" data-success="right" required>Email</label>
           </div>
         </div>
 		 <div class="row">
         <div class="input-field col s12">
            <i class="material-icons prefix">feedback</i>         
-		 <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Type Your Query Here...</label>
+		 <textarea id="message" class="materialize-textarea" required></textarea>
+          <label for="message">Type Your Query Here...</label>
         </div>
       </div>
  		 <div class="row">
         <div class="input-field col s12">
       <center>
-     <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Submit Query</a>
- </div></div></center>
-      </div>
-    </form>
+      <button type="submit" class="btn-large waves-effect waves-light teal submit"><i class="material-icons right">cloud</i>Send Message</button>
+      </center>
+      </form>
+ 		</div>
+ 	</div>
+      
+   
   </div>
 			<!-- <div class="col m3 hide-on-small-only">
 				<a class="waves-effect waves-light btn-large" href="events.html">Contact Us:</a>
@@ -135,6 +138,24 @@
 			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.min.js"></script>
 			<script type="text/javascript" src="js/custom.js"></script>
+			<script>
+				$(function(){
+					$('.submit').click(function(e){
+						e.preventDefault();
+
+						var name = $('#name').val();
+						var roll = $('#roll').val();
+						var email = $('#email').val();
+						var phone = $('#phone').val();
+						var message = $('#message').val();
+
+						
+						$.post('contact.php',{name:name, roll:roll, email:email, phone:phone, message:message},function(data){
+							alert(data);
+						});
+					});	
+				});
+			</script>
 		
 		</body>
 	</html>
