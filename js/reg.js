@@ -60,9 +60,10 @@ $(document).ready(function() {
 
    	$.post('register.php',{name:name, roll:roll, branch:branch, year:year, email:email, phone:phone, eventnames:eventnames, eventnamesg:eventnamesg,teventnames:teventnames}, function(return_data){
 		alert(return_data);
+    window.location.replace("index.html");
 	});
 
-    window.location.replace("index.html");
+    
 
 
 
